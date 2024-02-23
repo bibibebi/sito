@@ -1,0 +1,68 @@
+/* Override default font stack with Elephant font for "Valentina Vannini" */
+h1 {
+    font-family: 'Elephant', sans-serif;
+    color: #fff; /* Change the color of the "Valentina Vannini" text */
+}
+
+/* Set font family to "Cascadia Mono Light" for the rest of the content */
+body, p, a, li {
+    font-family: 'Cascadia Mono Light', monospace;
+    color: #8F9779; /* Change the text color of the content */
+}
+
+/* Sidebar Navigation styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #8F9779; /* Change the background color of the sidebar to sage green */
+    padding-top: 20px;
+    overflow-y: auto; /* Add overflow-y to allow scrolling if the sidebar is too long */
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #fff; /* Change the text color of the sidebar to white */
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #AABD8C; /* Change the background color on hover to a slightly darker sage green */
+}
+
+/* Content styles */
+.content {
+    margin-left: 220px; /* Add left margin to make space for the sidebar */
+    padding: 20px;
+    background-color: #fff; /* Change the background to white */
+}
+
+/* Add the text-sage class for sage green color */
+.text-sage {
+    color: #8F9779;
+}
+
+/* Style for the slideshow */
+.slideshow img {
+    width: 100%; /* Make images fill the container width */
+    display: none; /* Hide all images by default */
+}
+
+/* Style for the active image in the slideshow */
+.slideshow img.active {
+    display: block; /* Show only the active image */
+}

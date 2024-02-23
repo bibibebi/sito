@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Studio Portfolio</title>
+    <!-- Link to Google Fonts for Elephant font -->
+    <link href="https://fonts.googleapis.com/css2?family=Elephant&display=swap" rel="stylesheet">
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .text-sage {
+            color: #8F9779; /* Cambia il colore del testo in verde salvia */
+        }
+        
+        /* Additional styles for the hero section */
+        #hero {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f0f0f0; /* Change background color as desired */
+        }
+        
+        .slideshow img {
+            max-width: 100%;
+            height: auto;
+            display: none;
+        }
+        
+        .slideshow img.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="content bg-white">
+        <!-- Header -->
+        <header id="header">
+            <div class="container">
+                <h1 class="font-elephant text-sage">Valentina Vannini ph</h1>
+                <p class="text-sage">Student at SpazioLabo Photography School, I am an artistic photographer and videomaker. My projects capture ideas and feelings that cannot be described in words, giving voice to our inner and most intimate sensations.</p>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home">
+            <div class="container">
+                <div class="slideshow">
+                    <img src="https://i.imgur.com/FQFqXnQ.jpeg" alt="Image 1" class="active">
+                    <img src="https://i.imgur.com/XabzXD8.jpeg" alt="Image 2">
+                    <img src="https://i.imgur.com/60TXtgJ.jpeg" alt="Image 3">
+                    <img src="https://imgur.com/SIjPE3t.jpeg" alt="Image 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" style="display: none;">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <!-- Gallery of high-quality images categorically -->
+                <div class="gallery">
+                    <!-- Your portfolio images here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" style="display: none;">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="text-sage">Information about the studio, its photographers, and their creative approach.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" style="display: none;">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="submit_form.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script for smooth scrolling -->
+    <script src="script.js"></script>
+</body>
+</html>
